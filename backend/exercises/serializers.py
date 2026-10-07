@@ -7,7 +7,7 @@ class MuscleGroupSerializer(serializers.ModelSerializer):
         model = MuscleGroup
         fields = ('id', 'name')
 
-class ExercisesSerializer(serializers.ModelSerializer):
+class ExerciseSerializer(serializers.ModelSerializer):
     muscle_group_name = serializers.CharField(
         source='muscle_group.name',
         read_only=True
