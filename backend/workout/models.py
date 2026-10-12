@@ -1,4 +1,7 @@
 from django.db import models
+from django.contrib.auth.models import User
+from exercises.models import Exercise
+
 
 class WorkoutTemplate(models.Model):
     user = models.ForeignKey(

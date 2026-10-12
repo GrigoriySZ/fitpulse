@@ -7,7 +7,7 @@ class MuscleGroupAdmin(admin.ModelAdmin):
     search_fields = ('name',)
 
 @admin.register(Exercise)
-class ExerciseAdmin(Exercise):
+class ExerciseAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'muscle_group')
     search_fields = ('name',)
     list_filter = ('muscle_group',)

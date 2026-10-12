@@ -45,7 +45,7 @@ class WorkoutSetSerializer(serializers.ModelSerializer):
     exercise_name = serializers.CharField(source='exercise.name',
                                           read_only=True)
     estimate_1rm = serializers.DecimalField(max_digits=6, 
-                                         decima_places=2,
+                                         decimal_places=2,
                                          read_only=True)
     
     class Meta:
